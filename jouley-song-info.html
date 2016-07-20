@@ -1,0 +1,30 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!-- @demo demo/index.html -->
+<dom-module id="jouley-song-info">
+  <template>
+    <style>
+      :host {
+        display: flex;
+        flex-direction: column;
+        padding: 0.4em 0.6em;
+        min-width: 120px;
+      }
+    </style>
+    <span>[[song.title]]</span>
+    <span>[[song.artist]]</span>
+  </template>
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'jouley-song-info',
+
+        properties: {
+          song: Object
+        }
+      });
+    })();
+  </script>
+</dom-module>
